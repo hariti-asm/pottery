@@ -1,41 +1,45 @@
-let artists = document.querySelector(".artists .list");
-let items = document.querySelectorAll(".artists .list .item");
-let next = document.getElementById("next");
-let prev = document.getElementById("prev");
-let dots = document.querySelectorAll(".artists .dots li");
+const artistsData = [
+  {
+    imageUrl: "images/serghuini.jpg",
+    description:
+      "He is a master potter whose work is displayed at the British Museum and celebrated around the world. His family heritage spans the Moroccan pottery divide between the two competitive pottery centers of Fez and Safi. He is the seventh generation pottery master from his family.",
+  },
+  {
+    imageUrl: "images/footer.jpg",
+    description:
+      "He is a master potter whose  work is displayed at the British Museum and celebrated around the world. His family heritage spans the Moroccan pottery divide between the two competitive pottery centers of Fez and Safi. He is the seventh generation pottery master from his family.",
+  },
+];
 
-let lengthItems = items.length - 1;
-let active = 0;
-next.onclick = function () {
-  active = active + 1 <= lengthItems ? active + 1 : 0;
-  reloadartists();
-};
-prev.onclick = function () {
-  active = active - 1 >= 0 ? active - 1 : lengthItems;
-  reloadartists();
-};
-let refreshInterval = setInterval(() => {
-  next.click();
-}, 1000);
-function reloadartists() {
-  artists.style.left = -items[active].offsetLeft + "px";
-  //
-  let last_active_dot = document.querySelector(".artists .dots li.active");
-  last_active_dot.classList.remove("active");
-  dots[active].classList.add("active");
+const artistContainers = document.querySelectorAll(".artist-container");
+let currentArtistIndex = 0;
 
-  clearInterval(refreshInterval);
-  refreshInterval = setInterval(() => {
-    next.click();
-  }, 1000);
+// Initially, show the first artist container
+artistContainers[currentArtistIndex].style.display = "block";
+
+function updateArtist() {
+  const currentContainer = artistContainers[currentArtistIndex];
+  const nextIndex = (currentArtistIndex + 1) % artistContainers.length;
+  const nextContainer = artistContainers[nextIndex];
+
+  // Apply the transform to slide out the current artist container
+  currentContainer.style.transform = "translateX(-120%)";
+
+  // Wait for the transition to complete before updating the artist
+  setTimeout(() => {
+    const nextArtist = artistsData[nextIndex];
+
+    currentContainer.style.display = "none"; // Hide the current artist container
+    nextContainer.style.display = "block"; // Show the next artist container
+
+    nextContainer.querySelector("img").src = nextArtist.imageUrl;
+    nextContainer.querySelector("p").textContent = nextArtist.description;
+
+    // Reset the transform to slide in the next artist container
+    currentContainer.style.transform = "translateX(0)";
+  }, 500); // Adjust the time to match your CSS transition duration
+
+  currentArtistIndex = nextIndex;
 }
 
-dots.forEach((li, key) => {
-  li.addEventListener("click", () => {
-    active = key;
-    reloadartists();
-  });
-});
-window.onresize = function (event) {
-  reloadartists();
-};
+setInterval(updateArtist, 2000);

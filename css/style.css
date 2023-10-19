@@ -232,15 +232,6 @@ gap:10px
 }
 
 
-
-/* 
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
-
-body {
-  font-family: "Baloo Bhai 2", cursive;
-  background-color: #eeeeee;
-} */
-
 .containerFluid {
   width: 50%;
   margin: 0 auto;
@@ -383,6 +374,21 @@ font-weight: 700;
 line-height: normal;
 margin-right: 2%;
 }
-.navbar li{
+/* .navbar li{
 margin-bottom: 10px;
 }
+.artist-container {
+    display: none; 
+    transform: translate(-50%,-50%);
+  }
+  
+  .artist-info img,
+  .artist-info p {
+    transition: transform 0.2s ease-in;
+  }
+  section:nth-of-type(2) {
+    height: 90px;
+    display: flex;
+    align-items: center;
+  } */
+  
