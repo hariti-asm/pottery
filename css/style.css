@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+/* html{
+    overflow: hidden;
+} */
 .header {
     display: flex;
     justify-content: center;
@@ -110,11 +112,204 @@ margin-top: 10%;;
 }
 .title{
 text-align: center;
-font-size: 200%;
-font-weight: 500;
+font-size: 250%;
+font-weight: 550;
 }
 .line {
-    border: none;
-    border-top: 2px solid black; 
+    border:none;
+    border-top: 2px solid rgba(255, 165, 0, 0.73);; 
     width: 100%;
+    width: 10%;
+    height: 10px;
+    margin-left: 10px;
+}
+.about{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+}
+
+.babChaaba {
+    width: 40vw;
+    height: 100vh;
+    border-radius: 200px 200px 0px 0px;
+    margin-left: 4%;
+}
+
+.potrie2 {
+    width: 30vw;
+    height: 90vh;
+    flex-shrink: 0;
+    border-radius: 150px 0px;
+    position: relative;
+    top: -100px; 
+    z-index: 2; 
+    margin-left: 16%;
+}
+.description{
+    display: flex;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.50);
+    font-size: 120%;
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+
+.descript{
+    display: flex;
+    align-items: start;
+    color:rgba(0, 0, 0, 0.50);
+    font-size: 120%;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+/* .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.span-two {
+    grid-column: 2;
+    height: 50%; 
+    width: 200%; 
+} */
+.flex{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+
+}
+.img{
+    width: 377.328px;
+height: 251.675px;
+flex-shrink: 0;
+}
+.img2{
+    width: 765px;
+    height: 251.675px;
+    flex-shrink: 0;
+}
+.artists{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:10px
+}
+.artists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center; 
+}
+
+.artist-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50vw; */
+}
+.artist-info p{
+    max-width: 50vw;
+}
+
+
+
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
+
+body {
+  font-family: "Baloo Bhai 2", cursive;
+  background-color: #eeeeee;
+} */
+
+.containerFluid {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.containerFluid h2 {
+  color: hotpink;
+  position: relative;
+  width: 24rem;
+}
+
+.containerFluid h2::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 12px;
+  width: 67px;
+  height: 2px;
+  background-color: hotpink;
+}
+
+.accordion {
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #6db5ff;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.accordion .icon {
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px 7px #6db5ff;
+  border-radius: 50%;
+  float: left;
+  transition: all 0.5s ease-in;
+}
+
+.accordion h5 {
+  font-size: 22px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: #1f5c9a;
+}
+
+.active {
+  background-color: #6db5ff;
+  color: #fff;
+}
+
+.active .icon {
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px -25px #fff;
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 1px solid #6db5ff;
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
 }
