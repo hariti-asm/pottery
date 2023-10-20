@@ -24,6 +24,7 @@ function updateArtist() {
 
   // Apply the transform to slide out the current artist container
   currentContainer.style.transform = "translateX(-120%)";
+  currentContainer.style.transition = "ease-out 200ms";
 
   // Wait for the transition to complete before updating the artist
   setTimeout(() => {
@@ -37,7 +38,7 @@ function updateArtist() {
 
     // Reset the transform to slide in the next artist container
     currentContainer.style.transform = "translateX(0)";
-  }, 500); // Adjust the time to match your CSS transition duration
+  }, 200); // Adjust the time to match your CSS transition duration
 
   currentArtistIndex = nextIndex;
 }

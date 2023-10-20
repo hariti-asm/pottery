@@ -1,0 +1,227 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.categorie {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+  }
+  .categorie p{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inria Serif;
+    font-size: 20.642px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left:2%
+  }
+.categorie img{
+    padding-left:2%
+  }
+  .celebrating{
+
+color: rgba(0, 0, 0, 0.84);
+font-family: Italianno;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: end;
+padding-right: 16%;
+margin-bottom: -4%;
+/* position: fixed; */
+  }
+  /* .tarrif{
+    color: rgba(0, 0, 0, 0.84);
+font-family: Italianno;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+  } */
+  .column{
+
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .tarif1{
+    display: flex;
+    align-items: center;
+
+  }
+ .flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .form{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inria Serif;
+    font-size: 20.642px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom:4%;
+
+ }
+ .tarif1 p{
+    color: rgba(0, 0, 0, 0.70);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ }
+ .participate{
+    background: url(pexels-sadi-gökpınar-18025831.jpg) 50% / cover no-repeat;
+    position: relative;
+    width: 100vw;
+    height: 40em;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+   
+    .container {
+      min-height: 100vh;
+      background: #08071d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("pexels-sadi-gökpınar-18025831.jpg") no-repeat center center/cover;
+    }
+
+    .container form {
+      width: 670px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      flex-wrap: wrap;
+    }
+
+    .container form h1 {
+      color: #fff;
+      font-weight: 500;
+      margin-top: 20px;
+      width: 500px;
+      text-align: center;
+      font-family: Inria Serif;
+
+    }
+
+    .container form input {
+      width: 290px;
+      height: 40px;
+      padding-left: 10px;
+      outline: none;
+      border: none;
+      font-size: 15px;
+      margin-bottom: 10px;
+      background: none;
+      border-bottom: 2px solid #fff;
+    }
+
+    .container form input::placeholder {
+      color: #ddd;
+    }
+
+    .container form #lastName,
+    .container form #mobile {
+      margin-left: 20px;
+    }
+
+    .container form h4 {
+      color: #fff;
+      font-weight: 300;
+      width: 600px;
+      margin-top: 20px;
+    }
+
+    .container form textarea {
+      background: none;
+      border: none;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      font-weight: 200;
+      font-size: 15px;
+      padding: 10px;
+      outline: none;
+      min-width: 600px;
+      max-width: 600px;
+      min-height: 80px;
+      max-height: 80px;
+    }
+
+    textarea::-webkit-scrollbar {
+      width: 1em;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+      background-color: rgba(194, 194, 194, 0.713);
+    }
+
+    .container form #button {
+      border: none;
+      background: rgb(189, 189, 113);
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #333;
+      width: 100px;
+      padding: 0;
+      margin-right: 500px;
+      margin-bottom: 30px;
+      transition: 0.3s;
+    }
+
+    .container form #button:hover {
+      opacity: 0.7;
+      background-color: yellow;
+    }
+    .tarrifing {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Align items in the center of the column */
+        margin-bottom: 4%;
+
+      }
+      
+      .tarrif {
+        color: rgba(0, 0, 0, 0.84);
+        font-family: Italianno;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+      }
+      
+      .line3 {
+        border: none;
+        border-top: 2px solid rgba(255, 165, 0, 0.73);
+        width: 10%; /* You can set this width as needed */
+        height: 10px;
+      }
+      

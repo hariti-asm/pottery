@@ -1,0 +1,75 @@
+.old {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.69) 100%), url(ceramic.jpg), lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    color: white; 
+    
+    gap:8%;
+
+  }
+  .old p{
+    color: #FFF;
+font-family: Italianno;
+font-size: 70px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  
+  .button1 {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .btn1 {
+    width: 145px;
+    height: 49.094px;
+    border-radius: 200px;
+    background: rgba(255, 165, 0, 0.52);
+    border: none;
+  }
+  .margin{
+    margin-top:8%
+  }
+    .pictures img{
+        width: 377.328px;
+        height: 251.675px;
+padding-bottom: 10px;
+
+    }
+    .pictures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center; 
+        flex-wrap: wrap;
+        
+    }
+    .video-container {
+        position: relative;
+        width: 90vw; 
+        height: 360px; /* Set the height you desire */
+        background: rgba(255, 165, 0, 0.78);
+        margin:auto
+    }
+
+    /* Style for the video icon */
+    .video-icon {
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        /* transform: translate(-50%, -50%); */
+        cursor: pointer;
+    }
+      
