@@ -21,12 +21,21 @@
               <path d="M4.43963 9.46165C3.26776 9.46165 2.2616 9.04735 1.42116 8.21875C0.592566 7.37831 0.178267 6.37216 0.178267 5.20028C0.178267 4.04025 0.592566 3.04593 1.42116 2.21733C2.2616 1.38873 3.26776 0.974431 4.43963 0.974431C5.57599 0.974431 6.57031 1.38873 7.42259 2.21733C8.27486 3.04593 8.70099 4.04025 8.70099 5.20028C8.70099 5.98153 8.49976 6.69768 8.0973 7.34872C7.70668 7.98793 7.19176 8.50284 6.55256 8.89347C5.91335 9.27225 5.20904 9.46165 4.43963 9.46165Z" fill="#FFA500" />
             </svg>
           </span></p>
+        <section class="top-nav">
+
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+          <ul class="menu">
+            <a href="index.html">Home</a>
+            <a href="galeries.html">Galeries</a>
+            <a href="workshop.html">Workshop</a>
+
+          </ul>
+        </section>
       </div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="galeries.html">Galeries</a>
-        <a href="workshop.html">Workshop</a>
-      </nav>
+
     </div>
   </header>
   <section>
@@ -43,20 +52,47 @@
       <p class="title">History Categories</p>
       <hr class="line">
     </div>
-    <div class="pictures">
-      <img src="images/p33.jpg" alt="">
-      <img src="images/footer.jpg" alt="">
-      <img src="images/vase.jpg" alt="">
-    </div>
-    <div class="pictures">
-      <img src="images/mini-taj.jpg" alt="">
-      <img src="images/sl1.jpg" alt="">
-      <img src="images/ceramic.jpg" alt="">
-    </div>
-    <div class="about">
 
-      <p class="title">Dicsover The Inside </p>
-      <hr class="line">
+    <!DOCTYPE html>
+    <html lang="en">
+
+
+
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img src="images/p33.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/P22.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/p2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/p11.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/sl2.jpg" alt="">
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev">
+
+          < </button>
+            <button id="next">></button>
+      </div>
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+
+    <p class="title">Dicsover The Inside </p>
     </div>
     <div class="video-container">
       <!-- The clickable video icon -->
@@ -121,6 +157,8 @@
       videoContainer.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/1Xk5yq6izdo?autoplay=1" frameborder="0" allowfullscreen></iframe>';
     });
   </script>
+  <script src="js/app.js"></script>
+
 </body>
 
 </html>
