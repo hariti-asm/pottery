@@ -59,7 +59,7 @@ padding-bottom: 10px;
     .video-container {
         position: relative;
         width: 90vw; 
-        height: 360px; /* Set the height you desire */
+        height: 360px; 
         background: rgba(255, 165, 0, 0.78);
         margin:auto
     }
@@ -69,7 +69,7 @@ padding-bottom: 10px;
         position: absolute;
         top: 35%;
         left: 45%;
-        /* transform: translate(-50%, -50%); */
+        transform: translate(-50%, -50%);
         cursor: pointer;
     }
       
@@ -134,6 +134,9 @@ padding-bottom: 10px;
         border-radius: 20px;
         transition: 0.5s;
     }
+    .items{
+        display: flex; justify-content: space-evenly;align-items: center ;flex-wrap: wrap;
+    }
     .slider .dots li.active{
         width: 30px;
     }
@@ -141,4 +144,31 @@ padding-bottom: 10px;
         .slider{
             height: 400px;
         }
+        .items .imageFooter{
+            display: none;
+        }
+        .items{
+
+            width: 100vw;
+            height: 50vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.69) 100%), url(footer\ copy.jpg), lightgray 50% / cover no-repeat;
+            display: flex;
+            /* flex-direction: column;  */
+            justify-content: center; 
+            align-items: center;
+            text-align: center; 
+            color: white; 
+            
+            gap:8%;
+        }
+        .navbar li{
+
+            color:white;
+        }
+        .icon p{
+            color: white;
+        }
+    .mobile-orange {
+      fill: orange; 
     }
+}

@@ -12,14 +12,26 @@ body {
   position: relative;
   overflow: hidden;
 }
-.header {
-    position: sticky;
+header {
+  position: sticky;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-  }
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* top: 0;
+  left: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10%;
+  /* background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); */
+  font-family: sans-serif;
+  /* height: 80px; */
+  z-index: 1;
+}
 
 
 
@@ -78,18 +90,18 @@ font-size: 200%;
   flex-direction: row; /* Added this line */
 }
 
-.menu {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+.menu{
+   display: flex;
+list-style-type: none;
+justify-content: space-around;
+align-items: center; 
+
 }
 
 .logo {
   display: flex;
   margin-left: 5%;
+  align-items: center;
 }
 
 .pottery {
@@ -236,6 +248,7 @@ font-weight: 550;
     justify-content: center;
     gap:10px;
     flex-wrap: wrap;
+    margin-top: 10px;
 
 }
 .img{
@@ -407,6 +420,18 @@ line-height: normal;
 list-style: none; 
 
 }
+.menu a{
+
+  color:black;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+list-style: none; 
+text-decoration: none;
+
+}
 .contact p{
     color: #000;
 
@@ -433,22 +458,12 @@ margin-right: 2%;
     align-items: center;
     justify-content: space-between;
     color: black;
-    /* height: 50px; */
-    padding: 1em;
   }
-  
-  /* .menu {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-  } */
-  
-  .menu > li {
+
+  .menu > a {
     margin: 0 1rem;
     overflow: hidden;
+    /* margin-right: 5%; */
   }
   
   .menu-button-container {
@@ -518,6 +533,7 @@ margin-right: 2%;
     header {
       position: relative;
       z-index: 100;
+      
     }
     #menu-toggle ~ .menu a {
       height: 0;
@@ -544,5 +560,12 @@ margin-right: 2%;
     }
     .menu > a:not(:last-child) {
       border-bottom: 1px solid #444;
+    }
+    .artist-info{
+      flex-direction: column;
+    }
+    .artist-info p{
+
+      max-width: 360px;
     }
   }
