@@ -5,9 +5,9 @@ const artistsData = [
       "He is a master potter whose work is displayed at the British Museum and celebrated around the world. His family heritage spans the Moroccan pottery divide between the two competitive pottery centers of Fez and Safi. He is the seventh generation pottery master from his family.",
   },
   {
-    imageUrl: "images/footer.jpg",
+    imageUrl: "images/pot1.jpg",
     description:
-      "He is a master potter whose  work is displayed at the British Museum and celebrated around the world. His family heritage spans the Moroccan pottery divide between the two competitive pottery centers of Fez and Safi. He is the seventh generation pottery master from his family.",
+      "She is a master potter whose  work is displayed at the British Museum and celebrated around the world. His family heritage spans the Moroccan pottery divide between the two competitive pottery centers of Fez and Safi. He is the seventh generation pottery master from his family.",
   },
 ];
 
