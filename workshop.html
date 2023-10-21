@@ -63,7 +63,7 @@
     </div>
 
 
-    <div class="flex">
+    <div class="flex1">
       <div class="column">
         <div class="tarif1">
           <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
@@ -96,14 +96,14 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
             <path d="M43.5417 6.875H11.4583C10.2428 6.875 9.07697 7.35789 8.21743 8.21743C7.35789 9.07697 6.875 10.2428 6.875 11.4583V43.5417C6.875 44.7572 7.35789 45.923 8.21743 46.7826C9.07697 47.6421 10.2428 48.125 11.4583 48.125H43.5417C44.7572 48.125 45.923 47.6421 46.7826 46.7826C47.6421 45.923 48.125 44.7572 48.125 43.5417V11.4583C48.125 10.2428 47.6421 9.07697 46.7826 8.21743C45.923 7.35789 44.7572 6.875 43.5417 6.875ZM43.5417 11.4583V43.5417H11.4583V11.4583H43.5417ZM22.9167 38.9583L13.75 29.7917L16.9812 26.5375L22.9167 32.4729L38.0188 17.3708L41.25 20.625" fill="#FFA500" />
           </svg>
-          <p>Friday, free acess for moroccans, foreign residents and students.</p>
+          <p>Friday, free acess for everybody </p>
         </div>
 
         <div class="tarif1">
           <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
             <path d="M43.5417 6.875H11.4583C10.2428 6.875 9.07697 7.35789 8.21743 8.21743C7.35789 9.07697 6.875 10.2428 6.875 11.4583V43.5417C6.875 44.7572 7.35789 45.923 8.21743 46.7826C9.07697 47.6421 10.2428 48.125 11.4583 48.125H43.5417C44.7572 48.125 45.923 47.6421 46.7826 46.7826C47.6421 45.923 48.125 44.7572 48.125 43.5417V11.4583C48.125 10.2428 47.6421 9.07697 46.7826 8.21743C45.923 7.35789 44.7572 6.875 43.5417 6.875ZM43.5417 11.4583V43.5417H11.4583V11.4583H43.5417ZM22.9167 38.9583L13.75 29.7917L16.9812 26.5375L22.9167 32.4729L38.0188 17.3708L41.25 20.625" fill="#FFA500" />
           </svg>
-          <p>Free access to teaching staff and ICOM card holders</p>
+          <p>Free to ICOM card holders</p>
         </div>
       </div>
 
@@ -118,14 +118,15 @@
 
       <form>
         <h1>Contact Us Form</h1>
-        <input type="text" id="firstName" placeholder="First Name" required>
-        <input type="text" id="lastName" placeholder="Last Name" required>
-        <input type="email" id="email" placeholder="CIN" required>
-        <input type="text" id="mobile" placeholder="Mobile" required>
+        <input type="text" id="firstName" placeholder="First Name" required pattern="[A-Za-z]{1,30}" title="First name should contain only letters and be less than 30 characters">
+        <input type="text" id="lastName" placeholder="Last Name" required pattern="[A-Za-z]{1,30}" title="Last name should contain only letters and be less than 30 characters">
+        <input type="text" id="cin" placeholder="CIN" required pattern="\d{6}" title="CIN should be an 8-digit number">
+        <input type="text" id="mobile" placeholder="Mobile" required pattern="\d{10}" title="Mobile number should be a 10-digit number">
         <h4>Type Your Message Here...</h4>
         <textarea required></textarea>
         <input type="submit" value="Send" id="button">
       </form>
+
     </div>
 
 
