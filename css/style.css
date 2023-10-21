@@ -197,6 +197,9 @@ font-weight: 550;
     border-radius: 200px 200px 0px 0px;
     margin-left: 4%;
 }
+.about-container{
+  display: flex;
+}
 
 .potrie2 {
     width: 30vw;
@@ -207,6 +210,12 @@ font-weight: 550;
     top: -100px; 
     z-index: 2; 
     margin-left: 16%;
+}
+.image-container {
+  display: flex;
+  flex-direction: row; /* Set to row for horizontal alignment on both mobile and larger screens */
+  align-items: center; /* Center align the image and description vertically */
+  margin-bottom: 20px; /* Add spacing between image sections */
 }
 .description{
     display: flex;
@@ -289,16 +298,16 @@ gap:10px
 
 
 .containerFluid {
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  margin:  auto;
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* float: left; */
 }
 
-.containerFluid h2 {
-  color: hotpink;
-  position: relative;
-  width: 24rem;
-}
+
 
 .containerFluid h2::after {
   position: absolute;
@@ -385,6 +394,7 @@ line-height: normal;
     display: flex;
     /* flex-direction: column; */
     align-items: center;
+    gap:4%;
     margin: 0 10px; /* Add margin between icon containers */
 }
 
@@ -515,7 +525,16 @@ margin-right: 2%;
     margin-top: 0px;
     transform: rotate(-405deg);
   }
-  
+  .icon2 {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap:2%;
+    margin: 0 10px; /* Add margin between icon containers */
+}
+.items{
+  display: flex; justify-content: space-evenly;align-items: center ;flex-wrap: wrap;
+}
   @media (max-width: 700px) {
     .menu-button-container {
       display: flex;
@@ -568,4 +587,54 @@ margin-right: 2%;
 
       max-width: 360px;
     }
+    .items .imageFooter{
+      display: none;
+  }
+  .items{
+
+      width: 100vw;
+      height: 50vh;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.69) 100%), url(footer\ copy.jpg), lightgray 50% / cover no-repeat;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      text-align: center; 
+      color: white; 
+      
+      gap:8%;
+  }
+  .navbar li{
+
+      color:white;
+  }
+  .icon p{
+      color: white;
+  }
+  .icon2 p{
+      color: white;
+  }
+
+  .navbar li{
+      margin-bottom:4%;
+  }
+  .image-container {
+    flex-direction: column; /* On mobile, stack image and description vertically */
+}
+.babChaaba{
+  height: 50vh;
+  width: 95vw;
+  margin-left: 0;
+}
+.about-container{
+  flex-direction: column;
+}
+.potrie2{
+  width: 95vw;
+  height: 50vh;
+  top:0;
+  margin-left: 0;
+}
+.accordion{
+  width: 90vw;
+}
   }

@@ -18,20 +18,37 @@ body {
     
     align-items: center;
     justify-content: center;
-    /* flex-wrap: wrap; */
 
   }
+  .categorie2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+   
+
+  }
+
   .categorie p{
     color: rgba(0, 0, 0, 0.50);
     font-family: Inria Serif;
-    font-size: 20.642px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-left:2%
   }
-.categorie img{
+  .categorie2 p{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inria Serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     padding-left:2%
+  }
+.categorie,.categorie2 img{
+    padding-left:2%;
+    padding-bottom: 1%;
   }
   .celebrating{
 
@@ -46,15 +63,7 @@ padding-right: 16%;
 margin-bottom: -4%;
 /* position: fixed; */
   }
-  /* .tarrif{
-    color: rgba(0, 0, 0, 0.84);
-font-family: Italianno;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-align: center;
-  } */
+
   .column{
 
     display: flex;
@@ -224,4 +233,32 @@ line-height: normal;
         width: 10%; /* You can set this width as needed */
         height: 10px;
       }
-      
+      .categorie2{
+        display: flex; flex-direction: row-reverse;
+      }
+      @media screen and (max-width:768px) {
+        .categorie {
+       flex-direction: column;
+
+        }
+        .categorie img{
+          width: 100vw;
+        }
+        
+        .categorie2 {
+          
+          flex-direction: column; /* Display items in a column on smaller screens */
+         
+        }
+        
+        .categorie p, .categorie2 p {
+          color: rgba(0, 0, 0, 0.50);
+          font-family: Inria Serif;
+          font-size: 20.642px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding: 0 2%; /* Add padding to both left and right sides */
+        }
+
+      }

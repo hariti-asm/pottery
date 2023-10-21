@@ -140,35 +140,15 @@ padding-bottom: 10px;
     .slider .dots li.active{
         width: 30px;
     }
+    .orange-svg {
+        fill: #B97A07; /* Default color */
+      }
+     
+    
     @media screen and (max-width: 768px){
         .slider{
             height: 400px;
         }
-        .items .imageFooter{
-            display: none;
-        }
-        .items{
-
-            width: 100vw;
-            height: 50vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.69) 100%), url(footer\ copy.jpg), lightgray 50% / cover no-repeat;
-            display: flex;
-            /* flex-direction: column;  */
-            justify-content: center; 
-            align-items: center;
-            text-align: center; 
-            color: white; 
-            
-            gap:8%;
-        }
-        .navbar li{
-
-            color:white;
-        }
-        .icon p{
-            color: white;
-        }
-    .mobile-orange {
-      fill: orange; 
-    }
+       
+  
 }
