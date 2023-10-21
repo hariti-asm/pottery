@@ -40,11 +40,10 @@ body {
   .categorie2 p{
     color: rgba(0, 0, 0, 0.50);
     font-family: Inria Serif;
-    font-size: 10px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left:2%
   }
 .categorie,.categorie2 img{
     padding-left:2%;
@@ -260,7 +259,8 @@ line-height: normal;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-          padding: 0 2%; /* Add padding to both left and right sides */
+          padding-left: 2%;
+          padding-right: 2%;
         }
         .flex1{
           flex-direction: column;
@@ -298,4 +298,8 @@ line-height: normal;
     .categorie img:first-child{
       padding-top:4%;
     }
+    .form{
+      max-width: 90vw;
+    }
+
       }

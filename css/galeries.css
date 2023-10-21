@@ -67,7 +67,7 @@ padding-bottom: 10px;
     /* Style for the video icon */
     .video-icon {
         position: absolute;
-        top: 35%;
+        top: 50%;
         left: 45%;
         transform: translate(-50%, -50%);
         cursor: pointer;
