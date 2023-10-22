@@ -283,23 +283,94 @@ line-height: normal;
     }
     
     .container form #button {
-      border: none;
-      border-radius: 5px;
-      margin-top: 20px;
-      font-weight: 600;
-      font-size: 20px;
-      color: #333;
-      width: 100px;
-      padding: 0;
-      margin-right: 500px;
-      margin-bottom: 30px;
-      transition: 0.3s; 
+      left: -250px;
+      top: 164px;
+      transition: none 0s ease 0s;
+      cursor: move;
+      position: relative;
+   
     }
     .categorie img:first-child{
       padding-top:4%;
     }
     .form{
       max-width: 90vw;
+    }
+
+      }
+      @media screen and (max-width:1024px) {
+        .categorie {
+       flex-direction: column;
+
+        }
+        .categorie img{
+          width: 100vw;
+          padding-top: 2%;
+          padding-bottom: 2%;
+        }
+        .categorie2 img{
+          width: 100vw;
+          padding-top: 2%;
+          padding-bottom: 2%;
+
+
+        }
+        
+        .categorie2 {
+          
+          flex-direction: column; /* Display items in a column on smaller screens */
+         
+        }
+        
+        .categorie p, .categorie2 p {
+          color: rgba(0, 0, 0, 0.50);
+          font-family: Inria Serif;
+          font-size: 20.642px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+        .flex1{
+          flex-direction: row;
+        }
+        .tarif1 svg {
+          max-width: 100%;
+      }
+      .container form{
+          flex-direction: column;
+          align-items: center;
+        
+      }
+      .container form h4{
+        text-align: center;
+        margin-left: -16%;
+      }
+      .container form #lastName,
+    .container form #cin {
+      margin-left: 0px;
+    }
+    
+    .container form #button {
+      left: -260px;
+      top: 164px;
+      transition: none 0s ease 0s;
+      cursor: move;
+      position: relative;
+   
+    
+    }
+    .categorie img:first-child{
+      padding-top:4%;
+    }
+    .form{
+      max-width: 90vw;
+    }
+    .container form textarea {
+    
+      min-width: 643px;
+   
     }
 
       }

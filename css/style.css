@@ -643,3 +643,119 @@ margin-right: 2%;
   width: 90vw;
 }
   }
+
+
+
+  @media (max-width: 1024px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .descript{
+      padding-left: 4%;
+    }
+    .flex {
+      flex-direction: column;
+      height: 251.328px;
+      width: 377.328px;
+    }
+    .menu {
+      position: absolute; 
+      top: 80%;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      margin-top:4%
+    }
+    header {
+      position: relative;
+      z-index: 100;
+      
+    }
+    #menu-toggle ~ .menu a {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      text-decoration: none;
+    }
+    #menu-toggle:checked ~ .menu a {
+      border: 1px soad #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > a {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .menu > a:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+   
+    /* .artist-info p{
+
+      max-width: 360px;
+    } */
+    .items .imageFooter{
+      display: none;
+  }
+  .items{
+
+      width: 100vw;
+      height: 50vh;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.69) 100%), url(footer\ copy.jpg), lightgray 50% / cover no-repeat;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      text-align: center; 
+      color: white; 
+      
+      gap:8%;
+  }
+  .navbar li{
+
+      color:white;
+  }
+  .icon p{
+      color: white;
+  }
+  .icon2 p{
+      color: white;
+  }
+
+  .navbar li{
+      margin-bottom:4%;
+  }
+  .image-container {
+    flex-direction: column; /* On mobile, stack image and description vertically */
+}
+.babChaaba{
+  height: 50vh;
+  width: 95vw;
+  margin-left: 0;
+}
+.about-container{
+  flex-direction: column;
+}
+.potrie2{
+  width: 95vw;
+  height: 50vh;
+  top:0;
+  margin-left: 0;
+}
+.accordion{
+  width: 90vw;
+}
+.panel p{
+  max-width: 100%;
+}
+  }
