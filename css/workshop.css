@@ -302,7 +302,9 @@ line-height: normal;
         .categorie {
        flex-direction: column;
 
+       
         }
+        
         .categorie img{
           width: 100vw;
           padding-top: 2%;

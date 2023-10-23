@@ -657,6 +657,12 @@ margin-right: 2%;
       font-size: 120%;
       text-align: justify;
     }
+    .contact svg{
+      display: none;
+    }
+    .contact p{
+      text-align: start;
+    }
     .menu-button-container {
       display: flex;
     }
