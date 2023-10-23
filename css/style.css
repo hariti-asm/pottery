@@ -594,6 +594,7 @@ margin-right: 2%;
     .artist-info p{
 
       max-width: 360px;
+      text-align: justify;
     }
     .items .imageFooter{
       display: none;
@@ -654,14 +655,17 @@ margin-right: 2%;
 
       font-family: sans-serif;
       font-size: 120%;
+      text-align: justify;
     }
     .menu-button-container {
       display: flex;
     }
     .descript,.description{
-      padding-left: 4%;
+      padding-left: 2%;
       font-family: sans-serif;
       font-size: 120%;
+      /* text-align: justify; */
+
     }
     .flex {
       flex-direction: column;
@@ -767,5 +771,6 @@ margin-right: 2%;
 }
 .panel p{
   max-width: 100%;
+  text-align: justify;
 }
   }
