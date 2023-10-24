@@ -335,7 +335,7 @@ line-height: normal;
           padding-right: 2%;
         }
         .flex1{
-          flex-direction: column;
+          flex-direction: row;
         }
         .tarif1 svg {
           max-width: 100%;
