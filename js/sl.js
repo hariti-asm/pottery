@@ -43,4 +43,4 @@ function updateArtist() {
   currentArtistIndex = nextIndex;
 }
 
-setInterval(updateArtist, 2000);
+setInterval(updateArtist, 4000);

@@ -291,7 +291,7 @@ gap:10px
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 50vw; */
+    width: 90vw;
     padding-top: 8%;
 }
 .artist-info p{
@@ -428,7 +428,7 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
-.navbar{
+.navbar a{
     color: rgba(185, 122, 7, 0.90);
     font-family: Inter;
     font-size: 16px;
@@ -436,8 +436,13 @@ line-height: normal;
     font-weight: 600;
     line-height: normal;
 list-style: none; 
-display: flex;
-flex-direction: column;
+text-decoration: none;
+
+
+}
+.navbar li{
+  list-style: none;
+
 }
 
 .menu a{
