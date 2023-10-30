@@ -19,7 +19,7 @@ let refreshInterval = setInterval(() => {
 }, 3000);
 function reloadSlider() {
   slider.style.left = -items[active].offsetLeft + "px";
-  //
+  //offset is a property to retrieve the left ossfet of the parent element , it returns the superior corner of the parent in pixels
   let last_active_dot = document.querySelector(".slider .dots li.active");
   last_active_dot.classList.remove("active");
   dots[active].classList.add("active");
