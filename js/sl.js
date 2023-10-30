@@ -14,7 +14,7 @@ const artistsData = [
 const artistContainers = document.querySelectorAll(".artist-container");
 let currentArtistIndex = 0;
 
-// Initially, show the first artist container
+// show the first artist container
 artistContainers[currentArtistIndex].style.display = "block";
 
 function updateArtist() {
@@ -26,11 +26,11 @@ function updateArtist() {
   currentContainer.style.transform = "translateX(-120%)";
   currentContainer.style.transition = "ease-out 200ms";
 
-  // Wait for the transition to complete before updating the artist
+  // Waiting the completion of the transition before updating the artist
   setTimeout(() => {
     const nextArtist = artistsData[nextIndex];
 
-    currentContainer.style.display = "none"; // Hide the current artist container
+    currentContainer.style.display = "none";
     nextContainer.style.display = "block"; // Show the next artist container
 
     nextContainer.querySelector("img").src = nextArtist.imageUrl;
@@ -38,7 +38,7 @@ function updateArtist() {
 
     // Reset the transform to slide in the next artist container
     currentContainer.style.transform = "translateX(0)";
-  }, 200); // Adjust the time to match your CSS transition duration
+  }, 200);
 
   currentArtistIndex = nextIndex;
 }
